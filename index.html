@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete Anos 50 — Cardápio, Preços e Endereço</title>
+  <meta name="description" content="Lanchonete retrô com hambúrgueres artesanais, porções crocantes e milk-shakes clássicos. Veja cardápio com preços, horários e localização.">
+  
+  <!-- Fontes Retrô do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            retro: {
+              red: '#b91c1c',
+              gold: '#d97706',
+              cream: '#faf5ea',
+              dark: '#1e293b',
+              card: '#ffffff'
+            }
+          },
+          fontFamily: {
+            display: ['"Alfa Slab One"', 'serif'],
+            script: ['"Lobster"', 'cursive'],
+            sans: ['"Work Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #faf5ea;
+      color: #1e293b;
+      font-family: 'Work Sans', sans-serif;
+    }
+    .retro-shadow {
+      box-shadow: 4px 4px 0px #b91c1c;
+    }
+    .retro-shadow-dark {
+      box-shadow: 4px 4px 0px #1e293b;
+    }
+    .retro-border {
+      border: 2px dashed rgba(185, 28, 28, 0.4);
+    }
+    .hero-pattern {
+      background-image: repeating-linear-gradient(45deg, rgba(30,41,59,0.05) 0 2px, transparent 2px 14px);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Faixa de aviso retrô -->
+  <div class="bg-red-700 px-4 py-2 text-center font-['Alfa_Slab_One'] text-xs uppercase tracking-widest text-amber-100 sm:text-sm">
+    Desde 2026 • Lanches artesanais feitos na chapa quente
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="sticky top-0 z-50 border-b-4 border-red-700 bg-[#faf5ea]/95 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <a href="#top" class="font-['Lobster'] text-3xl text-red-700 sm:text-4xl hover:opacity-90 transition">
+        Lanchonete Anos 50
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold uppercase tracking-wider">
+        <a href="#cardapio" class="hover:text-red-700 transition">Cardápio</a>
+        <a href="#sobre" class="hover:text-red-700 transition">Sobre Nós</a>
+        <a href="#contato" class="hover:text-red-700 transition">Localização</a>
+      </nav>
+      <a href="#cardapio" class="rounded-md bg-red-700 px-4 py-2 text-xs sm:text-sm font-bold uppercase tracking-wider text-white retro-shadow-dark transition-transform hover:-translate-y-0.5">
+        Ver Cardápio
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="relative overflow-hidden border-b-4 border-red-700 bg-amber-100/40 hero-pattern">
+    <div class="relative mx-auto max-w-4xl px-4 py-16 text-center sm:py-24">
+      <p class="font-['Lobster'] text-3xl text-amber-600 sm:text-4xl">Bem-vindo à</p>
+      <h1 class="mt-2 font-['Alfa_Slab_One'] text-5xl uppercase leading-tight text-red-700 sm:text-7xl">
+        Lanchonete Anos 50
+      </h1>
+      <p class="mx-auto mt-6 max-w-xl text-base sm:text-lg text-slate-700">
+        Hambúrgueres artesanais, porções crocantes e milk-shakes cremosos no autêntico clima retrô. Peça no balcão ou receba quentinho em casa!
+      </p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href="#cardapio" class="rounded-md bg-red-700 px-6 py-3 font-bold uppercase tracking-wider text-white retro-shadow-dark transition-transform hover:-translate-y-0.5">
+          🍔 Ver Cardápio & Preços
+        </a>
+        <a href="#contato" class="rounded-md border-2 border-red-700 bg-white px-6 py-3 font-bold uppercase tracking-wider text-red-700 retro-shadow transition-transform hover:-translate-y-0.5">
+          📍 Como Chegar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cardápio Digital -->
+  <section id="cardapio" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="text-center">
+      <p class="font-['Lobster'] text-2xl text-amber-600">Cardápio Digital</p>
+      <h2 class="font-['Alfa_Slab_One'] text-3xl uppercase tracking-wide text-slate-900 sm:text-4xl">
+        Sabores & Preços
+      </h2>
+      <div class="mx-auto mt-3 flex items-center justify-center gap-2">
+        <span class="h-0.5 w-12 bg-red-700"></span>
+        <span class="text-lg text-red-700">★</span>
+        <span class="h-0.5 w-12 bg-red-700"></span>
+      </div>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      <!-- Categoria 1: Hambúrgueres -->
+      <div class="rounded-xl bg-white p-6 retro-border retro-shadow">
+        <h3 class="mb-5 flex items-center gap-3 font-['Alfa_Slab_One'] text-xl uppercase text-red-700">
+          <span class="text-2xl">🍔</span> Hambúrgueres Artesanais
+        </h3>
+        <ul class="space-y-5">
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Clássico Anos 50</span>
+              <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-amber-800">Mais pedido</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 24,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Blend 150g, queijo prato, alface americana, tomate e molho especial no pão brioche artesanal.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Duplo Cheddar Bacon</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 32,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Dois blends 150g, cheddar cremoso derretido, cebola caramelizada e tiras de bacon crocante.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">X-Frango Crocante</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 26,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Sobrecoxa empanada bem crocante, queijo, maionese artesanal da casa e picles.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Veggie Retrô</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 25,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Hambúrguer de grão-de-bico com especiarias, queijo especial, rúcula e tomate seco.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Categoria 2: Porções -->
+      <div class="rounded-xl bg-white p-6 retro-border retro-shadow">
+        <h3 class="mb-5 flex items-center gap-3 font-['Alfa_Slab_One'] text-xl uppercase text-red-700">
+          <span class="text-2xl">🍟</span> Porções Crocantes
+        </h3>
+        <ul class="space-y-5">
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Batata Frita Rústica Grande</span>
+              <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-amber-800">Crocante</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 19,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Porção generosa para compartilhar com alecrim, sal defumado e maionese verde da casa.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Onion Rings da Casa</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 17,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Anéis de cebola dourados e ultracrocantes com molho barbecue defumado.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Frango a Passarinho (500g)</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 34,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Pedacinhos de frango fritos no alho e azeite, servidos com limão e farofa crocante.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Categoria 3: Shakes & Bebidas -->
+      <div class="rounded-xl bg-white p-6 retro-border retro-shadow">
+        <h3 class="mb-5 flex items-center gap-3 font-['Alfa_Slab_One'] text-xl uppercase text-red-700">
+          <span class="text-2xl">🥤</span> Shakes & Bebidas
+        </h3>
+        <ul class="space-y-5">
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Milk-Shake Tradicional 500ml</span>
+              <span class="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-amber-800">Destaque</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 16,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Chocolate belga, morango com pedaços ou fava de baunilha, servido na taça retrô.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Milk-Shake Crocante Ovomaltine</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 21,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Supercremoso com calda extra e flocos crocantes de Ovomaltine.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Refrigerante Lata 350ml</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 6,00</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Coca-Cola, Guaraná Antarctica, Fanta ou Sprite (geladíssimas).</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Sucos Naturais 500ml</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 9,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Laranja espremida na hora, maracujá da fruta ou limonada suíça.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Categoria 4: Sobremesas -->
+      <div class="rounded-xl bg-white p-6 retro-border retro-shadow">
+        <h3 class="mb-5 flex items-center gap-3 font-['Alfa_Slab_One'] text-xl uppercase text-red-700">
+          <span class="text-2xl">🍰</span> Sobremesas & Doces
+        </h3>
+        <ul class="space-y-5">
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Brownie Quente com Sorvete</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 15,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Brownie de chocolate meio amargo servido com bola de sorvete de baunilha e calda morna.</p>
+          </li>
+          <li>
+            <div class="flex items-baseline justify-between gap-2">
+              <span class="font-semibold text-slate-900">Petit Gâteau Chocolatudo</span>
+              <span class="mx-1 hidden flex-1 border-b-2 border-dotted border-slate-300 sm:block"></span>
+              <span class="whitespace-nowrap font-['Alfa_Slab_One'] text-red-700">R$ 18,90</span>
+            </div>
+            <p class="mt-1 text-sm text-slate-600">Bolinho quente recheado com calda cremosa e bola de sorvete de creme.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="mt-8 text-center text-sm text-slate-500">
+      * Preços válidos para consumo no local e viagem. Consulte combos promocionais no balcão.
+    </p>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="border-y-4 border-red-700 bg-white">
+    <div class="mx-auto max-w-4xl px-4 py-16 text-center">
+      <p class="font-['Lobster'] text-2xl text-amber-600">Nossa Tradição</p>
+      <h2 class="font-['Alfa_Slab_One'] text-3xl uppercase tracking-wide text-slate-900 sm:text-4xl">
+        Sobre a Lanchonete
+      </h2>
+      <p class="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-700 leading-relaxed">
+        A Lanchonete Anos 50 nasceu da paixão pelos lanches clássicos: ingredientes frescos todos os dias, carnes grelhadas no ponto certo e aquele atendimento acolhedor de bairro. Tudo acompanhado por uma trilha sonora nostálgica e muito carinho em cada prato.
+      </p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-3 text-left">
+        <div class="rounded-xl border-2 border-slate-200 bg-[#faf5ea] p-5">
+          <div class="text-3xl">🥩</div>
+          <h4 class="mt-3 font-['Alfa_Slab_One'] text-sm uppercase text-red-700">Blend Fresco</h4>
+          <p class="mt-1 text-xs text-slate-600">Carne moída todos os dias na casa, nunca congelada.</p>
+        </div>
+        <div class="rounded-xl border-2 border-slate-200 bg-[#faf5ea] p-5">
+          <div class="text-3xl">🍞</div>
+          <h4 class="mt-3 font-['Alfa_Slab_One'] text-sm uppercase text-red-700">Pão Artesanal</h4>
+          <p class="mt-1 text-xs text-slate-600">Fornadas quentinhas todas as manhãs com receita especial.</p>
+        </div>
+        <div class="rounded-xl border-2 border-slate-200 bg-[#faf5ea] p-5">
+          <div class="text-3xl">🛵</div>
+          <h4 class="mt-3 font-['Alfa_Slab_One'] text-sm uppercase text-red-700">Entrega Rápida</h4>
+          <p class="mt-1 text-xs text-slate-600">Embalagens térmicas especiais para chegar crocante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização & Horários -->
+  <section id="contato" class="mx-auto max-w-6xl px-4 py-16">
+    <div class="text-center">
+      <p class="font-['Lobster'] text-2xl text-amber-600">Venha nos Visitar</p>
+      <h2 class="font-['Alfa_Slab_One'] text-3xl uppercase tracking-wide text-slate-900 sm:text-4xl">
+        Endereço & Horários
+      </h2>
+      <div class="mx-auto mt-3 flex items-center justify-center gap-2">
+        <span class="h-0.5 w-12 bg-red-700"></span>
+        <span class="text-lg text-red-700">★</span>
+        <span class="h-0.5 w-12 bg-red-700"></span>
+      </div>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      <!-- Onde estamos -->
+      <div class="rounded-xl bg-white p-8 retro-border retro-shadow">
+        <h3 class="font-['Alfa_Slab_One'] text-xl uppercase text-amber-600 flex items-center gap-2">
+          📍 Onde Estamos
+        </h3>
+        <p class="mt-4 text-xl font-bold text-slate-900">Av. Paulista, 1000</p>
+        <p class="text-slate-600">Bela Vista — São Paulo / SP</p>
+        <p class="mt-4 text-sm font-semibold text-slate-700">Telefone / WhatsApp: <span class="text-red-700">(11) 99999-0000</span></p>
+        
+        <div class="mt-6">
+          <a href="https://maps.google.com/?q=Av.+Paulista,+1000,+São+Paulo" target="_blank" rel="noopener noreferrer" class="inline-block rounded-md bg-amber-500 px-5 py-2.5 font-bold uppercase tracking-wider text-slate-950 retro-shadow-dark transition-transform hover:-translate-y-0.5">
+            Abrir no Google Maps ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Horários -->
+      <div class="rounded-xl bg-white p-8 retro-border retro-shadow">
+        <h3 class="font-['Alfa_Slab_One'] text-xl uppercase text-amber-600 flex items-center gap-2">
+          ⏰ Horário de Funcionamento
+        </h3>
+        <ul class="mt-4 space-y-3">
+          <li class="flex items-baseline justify-between gap-3 text-sm">
+            <span class="font-semibold text-slate-800">Terça a Quinta</span>
+            <span class="mx-1 flex-1 border-b-2 border-dotted border-slate-300"></span>
+            <span class="font-bold text-slate-900">18:00 – 23:00</span>
+          </li>
+          <li class="flex items-baseline justify-between gap-3 text-sm">
+            <span class="font-semibold text-slate-800">Sexta e Sábado</span>
+            <span class="mx-1 flex-1 border-b-2 border-dotted border-slate-300"></span>
+            <span class="font-bold text-slate-900">18:00 – 00:00</span>
+          </li>
+          <li class="flex items-baseline justify-between gap-3 text-sm">
+            <span class="font-semibold text-slate-800">Domingo</span>
+            <span class="mx-1 flex-1 border-b-2 border-dotted border-slate-300"></span>
+            <span class="font-bold text-slate-900">12:00 – 22:00</span>
+          </li>
+          <li class="flex items-baseline justify-between gap-3 text-sm">
+            <span class="font-semibold text-slate-800">Segunda-feira</span>
+            <span class="mx-1 flex-1 border-b-2 border-dotted border-slate-300"></span>
+            <span class="font-bold text-red-700 uppercase">Fechado</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="border-t-4 border-red-700 bg-red-700 px-4 py-8 text-center text-amber-100">
+    <p class="font-['Lobster'] text-3xl">Lanchonete Anos 50</p>
+    <p class="mt-2 text-sm opacity-90">Av. Paulista, 1000 — Bela Vista, São Paulo/SP • (11) 99999-0000</p>
+    <p class="mt-3 text-xs uppercase tracking-widest opacity-75">
+      © 2026 Lanchonete Anos 50 • Feito com paixão retrô 🍔
+    </p>
+  </footer>
+
+</body>
+</html>
